@@ -1,5 +1,122 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: MuseoSans-500, Arial, Helvetica, Verdana, Sans-serif;
+    font-size: 10pt;
+    color: #333;
+    background: #ffffff;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size:30px;
+    font-family: MuseoSans-500Italic ,Helvetica, Verdana, Sans-serif;
+}
 
 #page-container {
-        background: red;
+    width: 760px;
+    margin: auto;
+}
+
+#slice {
+    background: crimson;
+    height: 20px;
+}
+
+#header {
+    padding:15px;
+}
+
+#sidebar {
+	float:left;
+	width:100px;
+	height:100px;
+    padding-right: 20px;
+    padding-top: 4px;
+}
+
+#content_wo {
+    padding: 20px;
+    
+}
+
+#content_wo a {
+    color: #000;
+    text-decoration: none;
+    font-family: MuseoSans-500Italic ,Helvetica, Verdana, Sans-serif;
+}
+
+#content_wo h2 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    font-family: MuseoSans-500Italic ,Helvetica, Verdana, Sans-serif;
+    font-size: 25px;
+}
+#content_wo h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    font-family: MuseoSans-500Italic ,Helvetica, Verdana, Sans-serif;
+    font-size:22px;
+}
+
+#content_wo p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+    padding-left:15px;
+}
+
+#content {
+    padding: 20px;
+    
+}
+
+#content a {
+    color: #000;
+    text-decoration: none;
+    font-family: MuseoSans-500Italic ,Helvetica, Verdana, Sans-serif;
+}
+
+#content h2 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    font-family: MuseoSans-500Italic ,Helvetica, Verdana, Sans-serif;
+    font-size: 25px;
+}
+#content h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    font-family: MuseoSans-500Italic ,Helvetica, Verdana, Sans-serif;
+    font-size:22px;
+}
+
+#content p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+    padding-left:15px;
+    margin-left:105px;
+}
+#footer {
+	clear: both;
+    font-family: MuseoSans-500, Tahoma, Arial, Helvetica, Sans-serif;
+    font-size: 10px;
+    color: #aaa;
+    margin : 4px;
+}
+#footer a {
+    color: #aaa;
+    text-decoration: none;
 }
