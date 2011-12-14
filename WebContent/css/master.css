@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-    font-family: MuseoSans-500, Arial, Helvetica, Verdana, Sans-serif;
+    font-family: Avant Garde, Helvetica, Verdana, Sans-serif;
     font-size: 10pt;
     color: #333;
     background: #ffffff;
@@ -14,7 +14,7 @@ body {
     display: none;
 }
 
-h1 {
+h1,h2,h3 {
     margin: 0;
     padding: 0;
     font-size:30px;
@@ -55,9 +55,10 @@ padding-top:7px;
 #sidebar {
 	float:left;
 	width:100px;
-	height:100px;
+	height: auto !important;
     padding-right: 20px;
     padding-top: 4px;
+    text-align:center;
 }
 #sidebarr {
 	float:right;
@@ -102,6 +103,7 @@ padding-top:7px;
 
 #content {
     padding: 20px;
+    height: auto !important;
     
 }
 
