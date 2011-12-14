@@ -35,12 +35,36 @@ h1 {
     padding:15px;
 }
 
+#header a{
+    text-decoration:none;
+    color:#000;
+}
+
+#floating_links {
+float:right;
+padding-right:100px;
+padding-top:7px;
+}
+
+#floating_links a{
+    color: crimson;
+    text-decoration: none;
+    font-family: MuseoSans-500Italic ,Helvetica, Verdana, Sans-serif;
+}
+
 #sidebar {
 	float:left;
 	width:100px;
 	height:100px;
     padding-right: 20px;
     padding-top: 4px;
+}
+#sidebarr {
+	float:right;
+	width:400px;
+	height:150px;
+    padding-right: 0px;
+    padding-top: 0px;
 }
 
 #content_wo {
@@ -49,7 +73,7 @@ h1 {
 }
 
 #content_wo a {
-    color: #000;
+    color: crimson;
     text-decoration: none;
     font-family: MuseoSans-500Italic ,Helvetica, Verdana, Sans-serif;
 }
@@ -82,7 +106,7 @@ h1 {
 }
 
 #content a {
-    color: #000;
+    color: crimson;
     text-decoration: none;
     font-family: MuseoSans-500Italic ,Helvetica, Verdana, Sans-serif;
 }
@@ -109,6 +133,12 @@ h1 {
     padding-left:15px;
     margin-left:105px;
 }
+
+#content_wo a {
+    color:#000;
+    text-decoration: none; 
+}
+
 #footer {
 	clear: both;
     font-family: MuseoSans-500, Tahoma, Arial, Helvetica, Sans-serif;
