@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-    font-family: Avant Garde, Helvetica, Verdana, Sans-serif;
+    font-family: MuseoSans-500, Arial, Helvetica, Verdana, Sans-serif;
     font-size: 10pt;
     color: #333;
     background: #ffffff;
@@ -14,7 +14,7 @@ body {
     display: none;
 }
 
-h1,h2,h3 {
+h1 {
     margin: 0;
     padding: 0;
     font-size:30px;
@@ -55,17 +55,13 @@ padding-top:7px;
 #sidebar {
 	float:left;
 	width:100px;
-	height: auto;
+	height:100px;
     padding-right: 20px;
     padding-top: 4px;
-    text-align:center;
-    margin-left: auto;   
-    margin-right: auto;
 }
-
 #sidebarr {
 	float:right;
-	width:400px;
+	width:250px;
 	height:150px;
     padding-right: 0px;
     padding-top: 0px;
@@ -105,7 +101,8 @@ padding-top:7px;
 }
 
 #content {
-    padding: 20px;   
+    padding: 20px;
+    
 }
 
 #content a {
@@ -153,6 +150,3 @@ padding-top:7px;
     color: #aaa;
     text-decoration: none;
 }
-
-img.center {   display: block;   margin-left: auto;   margin-right: auto; }
-
