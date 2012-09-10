@@ -1,0 +1,165 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Tahoma, Helvetica, Verdana, Sans-serif;
+    font-size: 10pt;
+    color: #333;
+    background: #ffffff;
+}
+
+.hidden {
+    display: none;
+}
+
+h1,h2,h3 {
+    margin: 0;
+    padding: 0;
+    font-size:30px;
+    font-family: MuseoSans-500Italic ,Helvetica, Verdana, Sans-serif;
+}
+
+#page-container {
+    width: 760px;
+    margin: auto;
+}
+
+#slice {
+    background: crimson;
+    height: 20px;
+}
+
+#header {
+    padding:15px;
+}
+
+#header a{
+ font-weight: bold;
+    text-decoration:none;
+    color:#000;
+}
+
+#floating_links {
+float:right;
+padding-right:100px;
+padding-top:7px;
+}
+
+#floating_links a{
+ font-weight: bold;
+    color: crimson;
+    text-decoration: none;
+    font-family: Tahoma, Helvetica, Verdana, Sans-serif;
+}
+
+#sidebar {
+	float:left;
+	width:100px;
+	height: auto;
+    padding-right: 20px;
+    padding-top: 4px;
+    text-align:center;
+    margin-left: auto;   
+    margin-right: auto;
+}
+
+#sidebarr {
+	float:right;
+	width:400px;
+	height:150px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+
+#content_wo {
+    padding: 20px;
+    
+}
+
+#content_wo a {
+ font-weight: bold;
+    color: crimson;
+    text-decoration: none;
+    font-family: Tahoma, Helvetica, Verdana, Sans-serif;
+}
+
+#content_wo h2 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    font-family: MuseoSans-500Italic ,Helvetica, Verdana, Sans-serif;
+    font-size: 25px;
+}
+#content_wo h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    font-family: MuseoSans-500Italic ,Helvetica, Verdana, Sans-serif;
+    font-size:22px;
+}
+
+#content_wo p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+    padding-left:15px;
+}
+
+#content {
+    padding: 20px;   
+}
+
+#content a {
+    color: crimson;
+    text-decoration: none;
+     font-weight: bold;
+    font-family: Tahoma, Helvetica, Verdana, Sans-serif;
+}
+
+#content h2 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    font-family: MuseoSans-500Italic ,Helvetica, Verdana, Sans-serif;
+    font-size: 25px;
+}
+#content h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    font-family: MuseoSans-500Italic ,Helvetica, Verdana, Sans-serif;
+    font-size:22px;
+}
+
+#content p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+    padding-left:15px;
+    margin-left:105px;
+}
+
+#content_wo a {
+    color:#000;
+    text-decoration: none;
+     font-weight: bold;
+    font-family: Tahoma, Helvetica, Verdana, Sans-serif;
+}
+
+#footer {
+	clear: both;
+    font-family: MuseoSans-500, Tahoma, Arial, Helvetica, Sans-serif;
+    font-size: 10px;
+    color: #aaa;
+    margin : 4px;
+}
+#footer a {
+    color: #aaa;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+img.center {   display: block;   margin-left: auto;   margin-right: auto; }
+
