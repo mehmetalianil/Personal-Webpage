@@ -17,6 +17,7 @@
     <meta name="author" content="Mehmet Ali Anil" />
     <link rel="stylesheet" type="text/css" href="css/MyFonts.css">
     <style type="text/css" media="all">@import "css/master.css";</style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
     <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -30,6 +31,20 @@
   })();
 
   </script>
+ 
+    <script>
+    function slideonlyone(thechosenone) {
+	 $('.content_wo').each(function(index) {
+	      if ($(this).attr("id") == thechosenone) {
+		   $(this).slideDown(200);
+	      }
+	      else {
+		   $(this).slideUp(600);
+	      }
+	 });
+    }
+    </script>
+
 </head>
 
 <body>
@@ -40,130 +55,163 @@
 	    
 	    <div id="header">
 	    <h1>Mehmet Ali ANIL</h1>
+		<div style="float:right">
+		<a href="https://joindiaspora.com/u/mehmetalianil"><img src="images/diaspora.png" alt="Diaspora *"></img></a>
+		<a href="https://twitter.com/#!/mehmetalianil"><img src="images/twitter.png" alt="Twitter"></img></a>
+		<a href="http://www.linkedin.com/in/mehmetalianil"><img src="images/linkedin.png" alt="Linked In"></img></a>
+		<a href="http://blog.mehmetalianil.com/"><img src="images/blog.png" alt="Blog"></img></a>
+		<a href="http://mehmetalianil.daportfolio.com/"><img src="images/deviant.png" alt="Deviantart"></img></a>
+		</div>
 	    B.Sc. EE & Physics - <a href="http://www.itu.edu.tr/en">Istanbul Technical University</a> <br>
 	    Ph.D. Candidate in Physics - <a href="http://www.colorado.edu">University of Colorado Boulder</a><br>
 	    Research Assistant in <a href="http://jila.colorado.edu/~lehnertk/">Lehnert Lab </a> - <a href="http://jilawww.colorado.edu">JILA</a><br>
 	    <a href="mailto:mehmet.ali.anil@colorado.edu">mehmet.ali.anil@colorado.edu</a> <br>
-	    GPG Public key for übergeeks, paranoids and those who messed up so bad that has come to me (Don't.): <br>
+	    GPG Public key for übergeeks, paranoids and those who messed up so bad that has come to me (Don't.):<br>
 	    UNI COLORADO <a href="mehmet_ali_anil_at_colorado.edu_46E25FD5.asc">46E25FD5</a> 
 	    </div>
-	    
-	    <div align="center">
-	    <a href="https://joindiaspora.com/u/mehmetalianil"><img src="images/diaspora.png" alt="Diaspora * (Don't have Facebook)"></a>
-	    <a href="https://twitter.com/#!/mehmetalianil"><img src="images/twitter.png" alt="Twitter"></a>
-	    <a href="http://www.linkedin.com/in/mehmetalianil"><img src="images/linkedin.png" alt="Linked In"></a>
-	    <a href="http://blog.mehmetalianil.com/"><img src="images/blog.png" alt="Blog"></a>
-	    <a href="http://mehmetalianil.daportfolio.com/"><img src="images/deviant.png" alt="Deviantart"></a>
+
+	    <div  style="background-color: #ECD078;">
+	    <a id="Header1" href="javascript:slideonlyone('Box1');"> <h2 class="content"> Hello.</h2> </a>
 	    </div>
-	    
-	    <div id="content_wo"> 
-        <h2>Hello.</h2>
-            <h3></h3>
-        <p>
-            This webpage is mostly intended to house links and short descriptions
-            of what I have done and some basic information. 
-        <p> 
-            I have considerable experience in microwave analog circuit design and optoelectronics 
-            and I had an undergraduate education focusing on analog VLSI & Device Physics, 
-            and I assisted research concerning both numerical modeling and experiments.
-        <p>
-            I am motivated to contribute to the effort in uncovering the area of device 
-            physics with an emphasis on engineering mesoscopic quantum states, 
-            by optical or electronic means. 
-        </div>
+	    <div class="content_wo" id="Box1">
+		<p>
+		This webpage is mostly intended to house links and short descriptions
+		of what I have done and some basic information.
+		</p>
+	        <p> 
+		I have considerable experience in microwave analog circuit design and optoelectronics 
+		, I had an undergraduate education focusing on analog VLSI & Device Physics, 
+		and I assisted research concerning both numerical modeling and experiments.
+		</p>
+	        <p>
+		I am motivated to contribute to the effort in uncovering the area of device 
+		physics with an emphasis on engineering mesoscopic quantum states, 
+		by optical or electronic means.
+		</p>
+	    </div>
+
+        
 	   
 
-	    <div id="content"> 
-	        <h2>Active Projects</h2>
-	    <div id="sidebar">
-	        <img src="images/kreveik_logo.png" alt="Kreveik Logo">
-        </div>
+
+	    <div  style="background-color: #D95B43;" >
+	    <a id="Header2" href="javascript:slideonlyone('Box2');"> <h2 class="content"> Active Projects </h2></a>
+	    </div>
+	    <div class="content_wo" id="Box2">
+		<div id="sidebar">
+		    <img src="images/kreveik_logo.png" alt="Kreveik Logo"></img>
+		</div>
 	        <div id="floating_links">
 	            <a href="http://www.github.com/Kreveik/kreveik"> GitHub link</a> - 
-                <a href="http://pypi.python.org/pypi/Kreveik/"> PyPI link</a>
-            </div>
+		    <a href="http://pypi.python.org/pypi/Kreveik/"> PyPI link</a>
+		</div>
             <h3>Kreveik</h3>
 	        <p>
-            Kreveik is a package coded in Python & C that is meant for the 
-            investigation of dynamics and evolution of random Boolean networks.
-            With this package, one can create Boolean networks, form ensembles
-            of them, expose them to genetic algorithms and extract relevant information.
-            <p>
-            This project is open to contribution. It is a project that I learn how to 
-            create a simulator in Python, and build the facilities accordingly, so it is 
-            likely that it has structural flaws. The main hub for development is 
-            <a href="http://www.github.com/Kreveik/kreveik">GitHub</a> and anyone
-            can issue a bug or suggest a feautre there.
+		Kreveik is a package coded in Python & C that is meant for the 
+		investigation of dynamics and evolution of random Boolean networks.
+		With this package, one can create Boolean networks, form ensembles
+		of them, expose them to genetic algorithms and extract relevant information.
+		</p>
+		<p>
+		This project is open to contribution. It is a project that I learn how to 
+		create a simulator in Python, and build the facilities accordingly, so it is 
+		likely that it has structural flaws. The main hub for development is 
+		<a href="http://www.github.com/Kreveik/kreveik">GitHub</a> and anyone
+		can issue a bug or suggest a feautre there.
+		</p>
+	    </div>
 
-        </div>
         
               
-        <div id="content"> 
-        <h2>Competitions & Awards</h2>
-        <div id="sidebar">
-            <img src="images/ieee.png" alt="IEEE logo">
-            <hr>
-            <a href="docs/IEEEIMSDesignProposal.pdf"> 
-            <img src="images/document.png" alt="IEEE IMS Design Proposal">
-            </a>
-        </div>  
-            <h3>IEEE IMS 2011 - Design of an Optical to Microwave Converter</h3>
-        <p>
-            Design of an analog optical to microwave converter in 2 GHz in 
-            IEEE International Microwave Symposium held in Maryland, Baltimore
-            in 2011. Shared the first prize with the team from UMass Dartmouth. 
-            Other team members include U.Aygun, O.Katircioglu, S. Kapicioglu.
-        <br><br><br><br> 
+        <div style="background-color: #C02942;"> 
+        <a id="Header2" href="javascript:slideonlyone('Box3');"> <h2 class="content"> Competitions & Awards </h2></a>
         </div>
+	    <div class="content_wo" id="Box3">
+	    <div id="sidebar">
+		<img src="images/ieee.png" alt="IEEE logo"></img>
+		<a href="docs/IEEEIMSDesignProposal.pdf"> 
+            </a>
+	    </div>  
+	    
+	    <h3>IEEE IMS 2011 - Design of an Optical to Microwave Converter</h3>
+	    	<div id="sidebarr">
+		<img src="images/document.png" alt="IEEE IMS Design Proposal"></img>
+		</div>
+		<p>
+		Design of an analog optical to microwave converter in 2 GHz in 
+		IEEE International Microwave Symposium held in Maryland, Baltimore
+		in 2011. Shared the first prize with the team from UMass Dartmouth. 
+                Other team members include U.Aygun, O.Katircioglu, S. Kapicioglu.
+		</p>
+		<br>
 
-        <div id="content">
-        <h2>Graduation Projects</h2>
-        
+	    </div>
+
+
+        <div  style="background-color: #E66E6E;">
+        <a id="Header2" href="javascript:slideonlyone('Box4');"> <h2  class="content"> Graduation Projects</h2></a>
+	</div>
+    
+        <div class="content_wo" id="Box4"> 
         <div id="sidebar">
             <img src="images/symmetry.png" alt="Symmetry in Dynamical System Networks"><br>
-            <hr>
-            <a href="docs/EEThesis.pdf"> 
-            <img src="images/document.png" alt="Symmetry in Dynamical System Networks">
-            </a>
-            <a href="docs/EEThesisPres.pdf"> 
-            <img src="images/presentation.png" alt="Symmetry in Dynamical System Networks">
-            </a>
         </div>  
 
             <h3>Symmetry in Nonlinear Dynamical System Networks</h3>
             <p>
+	    <div id="sidebarr">
+            <a href="docs/EEThesis.pdf"> 
+            <img src="images/document.png" alt="Symmetry in Dynamical System Networks"></img>
+            </a>
+            <a href="docs/EEThesisPres.pdf"> 
+            <img src="images/presentation.png" alt="Symmetry in Dynamical System Networks"></img>
+            </a>
+	    </div>
             This is my graduation project from Electrical Engineering. It is based on the work by Golubitsky 
             & Stewart, <i>"The Symmetry Perspective"</i>, trying to realize symmetrically coupled networks of 
             nonlinear dynamical systems with numerical simulations. I learned how to apply groups of finite
             symmetry operators to dynamical systems, and shown (as did in G&S) that the homomophism 
             from network topology to the solution set of the dynamical system gives one the ability to 
             think in terms of symmetry while engineering.
+
             <p>
             I think this is may have very interesting applications in oscillator design, RF resonators, but more
             importantly, it presents a new viewpoint, thus new opportunities in design of electronics.
-        </div>        
+            
 	    
 	    <div id="content">
 	        <div id="sidebar">
-                <img src="images/symmetry.png" alt="Symmetry in Dynamical System Networks"><br>
-                <hr>
-                <a href="docs/FizikBitirme.pdf"> 
-                <img src="images/document.png" alt="A Model for Evolution of Random Boolean Networks">
-                </a>
-                <a href="docs/FizikBitirmeSunumu.svg"> 
-                <img src="images/presentation.png" alt="A Model for Evolution of Random Boolean Networks">
-                </a>
+                <img src="images/symmetry.png" alt="Symmetry in Dynamical System Networks"></img><br>
             </div>  
 
             <h3>A Model for Evolution of Random Boolean Networks (Turkish)</h3>
+	    	    <div id="sidebarr">
+                <a href="docs/FizikBitirme.pdf"> 
+                <img src="images/document.png" alt="A Model for Evolution of Random Boolean Networks"></img>
+                </a>
+                <a href="docs/FizikBitirmeSunumu.svg"> 
+                <img src="images/presentation.png" alt="A Model for Evolution of Random Boolean Networks"></img>
+                </a>
+	    </div>
             <p>
             This is my Engineering Physics graduation project, where the effect of topological 
             properties of random Boolean networks over their dynamics are investigated. More explanation on this later.
-            <br><br><br><br>
+	    </p>
+	    <br>
+	    </br>
+	    <br>
+	    </br>
+	    
 
-        </div>        
-	   
-        <div id="content_wo"> 
+	    </div>
+	</div>     
+       
+	
+	<div style="background-color: #FFE181;">
+        <a id="Header2" href="javascript:slideonlyone('Box5');"> <h2 class="content"> Others </h2></a>
+	</div>
+	
+        <div class="content_wo" id="Box5"> 
         <h3>Yurtdisi PhD Rehberi</h3>
             <div id="floating_links">
                 <a href="https://github.com/yurtdisiphdrehberi/yurtdisiphdrehberi"> GitHub link</a>
@@ -175,10 +223,10 @@
             and want to apply for a Ph.D. in the US. I only made small contributions to this one, so the credit
             mostly goes to those who started the project. 
         </div> 
-    
         
         
-        <div id="content_wo"> 
+        
+        <div class="content_wo" id="Box5"> 
         <h3>Some Interesting Papers</h3>
                 <a href="http://www.nature.com/nature/journal/v479/n7373/full/nature10561.html"> Observation of the dynamical Casimir effect in a superconducting circuit</a><br>
                 <a href="http://arxiv.org/abs/1111.3328"> The quantum state cannot be interpreted statistically</a>
@@ -187,7 +235,7 @@
         </div> 
       
         
-        <div id="content_wo">
+        <div class="content_wo" id="Box5">
         <h2>Links</h2>
         <p>
            <a href="http://www.ostracizedostrich.com/"> My Weblog </a> - 
@@ -196,15 +244,17 @@
            <a href="http://twitter.com/mehmetalianil/"> Twitter </a>- 
            <a href="http://mehmetalianil.daportfolio.com/"> Deviant Art </a>
         </div>
-        
-	    <div id="footer">Mehmet Ali Anil  - 2011 - The font used in this webpage is Museo Sans 
-	    by <a href="http://www.exljbris.nl/">Exljibris</a>.<br> Last modified: Sep 9, 2012
-	    </div>
-	    <div id="slice"></div>
-          
-        
-        
-	</div>
 
+	
+	<div id="footer">
+	    <p>Mehmet Ali Anil  - 2011 - The font used in this webpage is Museo Sans 
+	    by <a href="http://www.exljbris.nl/">Exljibris</a>.<br>
+	    The color palettes are from <a href="http://www.colourlovers.com/lover/Zlaika/"> Zlaika</a> and
+	    <a href="http://www.colourlovers.com/lover/manekineko/"> manekineko </a>
+	    Last modified: Nov 18, 2012
+	    <div id="slice"></div>
+	</div>
+	</div>
+</div>
 </body>
 </html>
