@@ -5,8 +5,8 @@ html, body {
 }
 
 body {
-    font-family: Arial, Helvetica, Verdana, Sans-serif;
-    font-size: 10pt;
+    font-family: "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif;
+    font-size: 10.5pt;
     color: #333;
     background: #ffffff;
     text-rendering: optimizeLegibility; 
@@ -39,7 +39,7 @@ a {
     color:#000;
     text-decoration: none;
      font-weight: bold;
-    font-family: Arial, Helvetica, Verdana, Sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif;
 }
 
 #page-container {
@@ -73,7 +73,7 @@ padding-top:7px;
  font-weight: bold;
     color: crimson;
     text-decoration: none;
-    font-family: Arial, Helvetica, Verdana, Sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif;
 }
 
 #sidebar {
@@ -107,7 +107,7 @@ a.content_wo{
  font-weight: bold;
     color: crimson;
     text-decoration: none;
-    font-family: Arial, Helvetica, Verdana, Sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif;
 }
 
 h2.content_wo  {
@@ -140,7 +140,7 @@ a.content{
     color: crimson;
     text-decoration: none;
      font-weight: bold;
-    font-family: Arial, Helvetica, Verdana, Sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, Verdana, Sans-serif;
 }
 
 h2.content{
