@@ -9,6 +9,7 @@ body {
     font-size: 10pt;
     color: #333;
     background: #ffffff;
+    text-rendering: optimizeLegibility; 
 }
 
 .hidden {
