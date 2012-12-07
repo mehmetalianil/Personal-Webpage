@@ -10,6 +10,8 @@ body {
     color: #333;
     background: #ffffff;
     text-rendering: optimizeLegibility; 
+    font-weight: 300;
+    color: #373737;
 }
 
 .hidden {
