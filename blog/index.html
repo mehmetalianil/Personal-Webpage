@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-    <title>Mehmet Ali Anil</title>
+    <title>Blog - Mehmet Ali Anil</title>
     <meta http-equiv="Content-Language" content="en-us" />
     <meta http-equiv="imagetoolbar" content="no" />
     <meta name="MSSmartTagsPreventParsing" content="true" />
@@ -34,12 +34,22 @@
 <body>
 
 <xmp theme="journal" style="display:none;">
+# 
 
-#First Post
+This is the web log of mine, a simple place to write about things that I am interested in. 
+You can always respond via [Twitter](http://twitter.com/mehmetalianil), or email me at <mehmet.ali.anil@colorado.edu>, 
+since this page won't be any fancier. 
 
-This will be my blog for my musings and this entry is for test purposes. The webpage uses StrapDown in order to render the markdown scripts, and MathJAX for rendering tex equations. I implemented a static webpage, since I am easily distracted by my greed for functionality & integration and often lack time and motivation for actual content. This time, I can't do anything else but actually *write.*
 
-##Testing
+-------------------------------------------------------------------------------------
+
+First Post - Testing 
+--------------------
+
+This will be my blog for my musings and this entry is for test purposes. The webpage uses StrapDown 
+in order to render the markdown scripts, and MathJAX for rendering tex equations. I implemented a static webpage,
+since I am easily distracted by my greed for functionality & integration and often lack time and motivation 
+for actual content. This time, I can't do anything else but actually *write.*
 
 Here is an equation: 
 
@@ -57,33 +67,29 @@ Which is the Hamiltonian for particle subject to a field and a central potential
 
 And, this is a snippet from one of my codes:
 
-	for(j=0;j<dims[1];j++){
+```Python
+def is_connected(self):
+    """
+    Returns True if the graph is connected, False if not.
+    uses the algorithm explained in 
+    http://keithbriggs.info/documents/graph-eigenvalues.pdf
+    """
+    symmetric = self.adjacency+self.adjacency.T-num.diag(
+                             self.adjacency.diagonal())
+    if (0 in symmetric.sum(axis=0) or 0 in symmetric.sum(axis=1)):
+        return False
+    degrees = num.diagflat(symmetric.sum(axis=0))
+    laplacian = degrees-symmetric
+    determinant = num.linalg.det(laplacian +num.ones((len(laplacian),len(laplacian) )))
+    return not(num.allclose(determinant,0.0))
+```
 
-		adj_value_ptr = (adjacency_arr->data + i*adjacency_arr->strides[0]
-				 +j*adjacency_arr->strides[1]);
-
-		if (*adj_value_ptr == true){
-
-			mask_value_ptr = (mask_arr->data + i*mask_arr->strides[0]
-			+j*mask_arr->strides[1]);
-
-			if(step==0){
-				state_value_ptr = (state_arr->data + j*state_arr->strides[0]);
-			} else {
-				state_value_ptr = (state_out->data + (step-1)*state_out->strides[0] + j*state_out->strides[1]);
-			}
-
-			if ( (*(bool *) mask_value_ptr ^ *(bool *)state_value_ptr) ==  true){
-				sum++;
-			}
-			conn_ctr++;
-		}
-	}
-
-Which is a horrible algorithm written in C using NumPY objects.
 
 Here is a photograph taken from the Flatirons, in Boulder,CO.
+
+<div align='center'>
 ![From the first Flatiron](./img/FromTheFirstFlatiron.jpg)
+</div>
 
 Here is a quote:
 
@@ -107,11 +113,9 @@ Here is a quote:
 
 **Claudius**, Hamlet, Act 1 Scene 2.
 
+<sub>Mehmet Ali Anil  -- February 10th, 2013 </sub>  
+
 -------------------------------------------------------------------------------------
-
-Here is a link to my home page: [Home Page][]
-
-[Home Page]: http://jila.colorado.edu/anilm
 
 
 </xmp>
