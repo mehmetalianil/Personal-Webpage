@@ -8,17 +8,11 @@
     <meta http-equiv="imagetoolbar" content="no" />
     <meta name="MSSmartTagsPreventParsing" content="true" />
     
-    <meta name="description" content="Personal Webpage of Mehmet Ali Anil. Houses projects,
-    affiliations, ideas and others." />
-    <meta name="keywords" content="Mehmet Ali Anil, Mehmet Ali Anıl, Mali, Anıl, Anil, Mali Anil, Mali Anıl, Physics, Kreveik, Monty Carlo, Quantum Optics, QED, Random Boolean Networks, Optical to Microwave Converter" />
+    <meta name="description" content="Web log of Mehmet Ali Anil" />
+    <meta name="keywords" content="Mehmet Ali Anil, Mehmet Ali Anıl, Mali, Anıl, Anil, Mali Anil, Mali Anıl, Physics" />
     <meta name="microid" content="mailto+http:sha1:738cd0c40e28faae1a598683211f0281e1e80010" />
     
     <meta name="author" content="Mehmet Ali Anil" />
-    <link rel="stylesheet" type="text/css" href="css/MyFonts.css">
-    <style type="text/css" media="all">@import "css/master.css";</style>
-    <script src="src/showdown.js" />
-	<script src="src/extensions/twitter.js" />
-
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
     <script type="text/javascript">
     
@@ -43,13 +37,82 @@
 
 #First Post
 
-This will be my blog for my musings and this entry is for test purposes. The webpage uses StripDown in order to render the markdown scripts, and MathJAX for rendering tex equations. The objective was to have a very simple and static page to put my thoughts into words in web log fashion. 
+This will be my blog for my musings and this entry is for test purposes. The webpage uses StrapDown in order to render the markdown scripts, and MathJAX for rendering tex equations. I implemented a static webpage, since I am easily distracted by my greed for functionality & integration and often lack time and motivation for actual content. This time, I can't do anything else but actually *write.*
+
+##Testing
 
 Here is an equation: 
 
 $$ F^{\mu \nu} = \delta^{\mu} A^{\nu} - \delta^{\nu} A^{\mu} $$
 
-which, as you can see is an antisymmetric rank 2 tensor. 
+which, as you can see is an **antisymmetric rank 2 tensor**. It is called the *field strength tensor*.
+
+Here is another one:
+
+$$H=\frac{1}{2\mu}(\vec{p}+e\vec{A})^2-eV=-\frac{\hbar^2}{2\mu}\nabla^2+
+\frac{e}{2\mu}\vec{B}\cdot\vec{L}+\frac{e^2}{2\mu}A^2-eV$$
+
+Which is the Hamiltonian for particle subject to a field and a central potential.
+
+
+And, this is a snippet from one of my codes:
+
+	for(j=0;j<dims[1];j++){
+
+		adj_value_ptr = (adjacency_arr->data + i*adjacency_arr->strides[0]
+				 +j*adjacency_arr->strides[1]);
+
+		if (*adj_value_ptr == true){
+
+			mask_value_ptr = (mask_arr->data + i*mask_arr->strides[0]
+			+j*mask_arr->strides[1]);
+
+			if(step==0){
+				state_value_ptr = (state_arr->data + j*state_arr->strides[0]);
+			} else {
+				state_value_ptr = (state_out->data + (step-1)*state_out->strides[0] + j*state_out->strides[1]);
+			}
+
+			if ( (*(bool *) mask_value_ptr ^ *(bool *)state_value_ptr) ==  true){
+				sum++;
+			}
+			conn_ctr++;
+		}
+	}
+
+Which is a horrible algorithm written in C using NumPY objects.
+
+Here is a photograph taken from the Flatirons, in Boulder,CO.
+![From the first Flatiron](./img/FromTheFirstFlatiron.jpg)
+
+Here is a quote:
+
+>  Therefore our sometime sister, now our queen,
+
+>  Th' imperial jointress to this warlike state, 
+
+>  Have we, as 'twere with a defeated joy, 
+
+>  With an auspicious, and a dropping eye, 
+
+>  With mirth in funeral, and with dirge in marriage, 
+
+>  In equal scale weighing delight and dole, 
+
+>  Taken to wife; nor have we herein barr'd 
+
+>  Your better wisdoms, which have freely gone
+
+>  With this affair along. For all, our thanks. 
+
+**Claudius**, Hamlet, Act 1 Scene 2.
+
+-------------------------------------------------------------------------------------
+
+Here is a link to my home page: [Home Page][]
+
+[Home Page]: http://jila.colorado.edu/anilm
+
 
 </xmp>
 
